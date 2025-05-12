@@ -26,5 +26,5 @@ A table is in 2NF if:
 Third normal form (3NF) builds on the foundation of 2NF 
 
 a table is in 2NF if: 
-- Each non-key column in a table is not transitively dependent on the primary key. 
-In other words, **there should be no transitive dependencies in the table**.
+- The table is in 2NF
+- Each non-key column in a table is not transitively dependent on the primary key (i.e. no transitive dependencies). 
