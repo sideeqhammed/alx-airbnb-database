@@ -8,18 +8,23 @@ update: updating data requires modifications in multiple tuples (rows)
 delete: deleting some data causes some other data to be lost
 
 ### First Normal Form (1NF)
-Atable is in 1NF if: 
+
+A table is in 1NF if: 
 - Each row in the table should have a unique identifier
 - Each value in the table is indivisible.
 - All entries in a column are of the same type.
 
 ### Second Normal Form (2NF)
+
 Second normal form (2NF) builds on the foundation of 1NF 
-a table is in 2NF if:
-and involves ensuring that each non-key column in a table is dependent on the primary key. 
-- The ta
-- **there should be no partial dependencies in the table**.
+
+A table is in 2NF if:
+- The table is in 1NF
+- Each non-key column in the table is dependent on the primary key (i.e. no partial dependencies in the table).
 
 ### Third Normal Form (3NF)
-Third normal form (3NF) builds on the foundation of 2NF and involves ensuring that each non-key column in a table is not transitively dependent on the primary key. 
+Third normal form (3NF) builds on the foundation of 2NF 
+
+a table is in 2NF if: 
+- Each non-key column in a table is not transitively dependent on the primary key. 
 In other words, **there should be no transitive dependencies in the table**.
