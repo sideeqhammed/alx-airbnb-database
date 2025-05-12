@@ -80,6 +80,4 @@
   - email in the User table.
   - property_id in the Property and Booking tables.
   - booking_id in the Booking and Payment tables.
-  
-  
-![ERD-1.png](https://drive.google.com/file/d/1cbCDXEMT5T9ThSfbddMI6l5V5i79r15y/view?usp=drive_link)
+
