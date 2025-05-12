@@ -1,4 +1,4 @@
-
+## Database Normalization
 Database normalization is an essential procedure to avoid inconsistency in a relational database management system. It should be performed in the design phase. 
 Normal forms are defined structures for relations with set of constraints that relations must satisfy in order to detect data redundancy and correct anomalies. 
 There can be following anomalies while performing a database operation:
