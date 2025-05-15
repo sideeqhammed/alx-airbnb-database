@@ -73,14 +73,14 @@ CREATE INDEX idx_property_id ON Review(property_id);
 CREATE INDEX idx_user_id_review ON Review (user_id);
 
 --- create message table
-CREATE TABLE Message (
-	message_id: Primary Key, UUID, Indexed,
-	sender_id: Foreign Key, references User(user_id),
-	recipient_id: Foreign Key, references User(user_id),
-	message_body: TEXT, NOT NULL,
-	sent_at: TIMESTAMP, DEFAULT CURRENT_TIMESTAMP,
-	FOREIGN KEY (sender_id) REFERENCES User(user_id),
-	FOREIGN KEY (recipient_id) REFERENCES User(user_id),
+CREATE TABLE message (
+	message_id VARCHAR(5) NOT NULL Primary Key,
+	sender_id VARCHAR(5) NOT NULL,
+	recipient_id VARCHAR(5) NOT NULL,
+	message_body VARCHAR(50) NOT NULL,
+	sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	FOREIGN KEY (sender_id) REFERENCES user(user_id),
+	FOREIGN KEY (recipient_id) REFERENCES user(user_id)
 );
 
 -- Create indexes for sender_id and recipient_id for optimized query performance
