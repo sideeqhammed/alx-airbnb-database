@@ -3,7 +3,7 @@ INSERT INTO User (user_id, first_name, last_name, email, password_hash, phone_nu
 VALUES
 ('u-101', 'Daniel', 'Brown', 'daniel.brown@example.com', 'hash_daniel', '5551234567', 'guest', '2025-01-01 10:00:00'),
 ('u-102', 'Emma', 'Wilson', 'emma.wilson@example.com', 'hash_emma', '5557654321', 'host', '2025-01-02 11:15:00'),
-('u-103', 'Grace', 'Taylor', 'grace.taylor@example.com', 'hash_grace', NULL, 'admin', '2025-01-03 08:30:00');
+('u-103', 'Grace', 'Taylor', 'grace.taylor@example.com', 'hash_grace', '5557652853', 'admin', '2025-01-03 08:30:00');
 
 -- Insert sample properties
 INSERT INTO Property (property_id, host_id, name, description, location, pricepernight, created_at, updated_at)
